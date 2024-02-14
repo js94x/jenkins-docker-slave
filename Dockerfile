@@ -1,11 +1,11 @@
-FROM ubuntu:20.04
-ENV TZ=Asia/Kolkata \
+FROM ubuntu:22.04
+ENV TZ=Europe/Berlin \
     DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
     apt-get install -qy tzdata
 
-LABEL maintainer="Bibin Wilson <bibinwilsonn@gmail.com>"
+LABEL maintainer="js94x"
 
 # Make sure the package repository is up to date.
 RUN apt-get update && \
